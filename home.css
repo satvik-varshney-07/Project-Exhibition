@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: "Assistant", sans-serif;
+    background-color: black
+}
+#background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.text-box{
+color: white;
+text-align: center;
+font-size: 200%;
+    top: 0;
+    position: fixed;
+    width: 90%;
+    margin-top: 220px;
+    margin-left: 85px;
+
+
+}
+.auto-input{
+   
+    color: #FFCC66;
+    
+}
+
+ul {
+    background: #010101;
+    display: table;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 90%;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+ul li a {
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 15px 10px;
+    font-size: 18px;
+    display: block;
+}
+ul li a + a {
+    margin-left: 16px;
+}
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+ul a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
